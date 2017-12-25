@@ -23,6 +23,7 @@
 - 贝叶斯要解决的问题：
     - 正向概率： 假设袋子里面的N个白球，M个黑球，你伸手进去摸一把，摸出黑球的概率是多少？
     - 向概率: 如果我们事先并不知道黑球与白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那我们可以就此对袋子中的黑白球的比例作出什么样的推测？
+    - [用贝叶斯算法实现 拼写检查 示例](https://github.com/yorkLiu/AILab/blob/master/MLCase/wordcorrect.py)
 
 ## scikit-Learn
 简单高效的数据挖掘和数据分析工具
@@ -178,7 +179,7 @@ XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开�
     Accuracy: 78.35 %
     
 ```
-[示例 1](https://github.com/yorkLiu/AILab/blob/master/MLCase/xgboost01.py) [示例 2](https://github.com/yorkLiu/AILab/blob/master/MLCase/xgboost02.py)
+[XGBoost 示例 1](https://github.com/yorkLiu/AILab/blob/master/MLCase/xgboost01.py) [XGBoost 示例 2](https://github.com/yorkLiu/AILab/blob/master/MLCase/xgboost02.py)
 
 
 ## TensorFlow
