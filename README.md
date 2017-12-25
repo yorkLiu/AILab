@@ -1,8 +1,8 @@
 # AI Lab
 
-## 机器学习 
+## 机器学习 e
 
-**决策树学习  主要参数**
+**1.决策树学习  主要参数**
 - criterion: gini or entropy
 - splitter: best or random 前者是在所有的特征中找最好的切分点，后者是在部分特征中（数据量大的时候）
 - max_features: None (所有), log2, sqrt, N 特征小于50的时候一般全用所有的
@@ -19,8 +19,27 @@
 
 - min_impurity_split: 这个值限制了决策树的增长，如果某些节点不纯度（基尼系数，信息增益，均方差，绝对差）小于这个阀值, 则该节点不再生成了节点。即为叶子节点。
 
-## TensorFlow
+**2. 贝叶斯算法**
+- 贝叶斯要解决的问题：
+    - 正向概率： 假设袋子里面的N个白球，M个黑球，你伸手进去摸一把，摸出黑球的概率是多少？
+    - 向概率: 如果我们事先并不知道黑球与白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那我们可以就此对袋子中的黑白球的比例作出什么样的推测？
 
+## XGBoost
+XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开源boosted tree工具包，比常见的工具包快10倍以上。在数据科学方面，有大量kaggle选手选用它进行数据挖掘比赛，其中包括两个以上kaggle比赛的夺冠方案。在工业界规模方面，xgboost的分布式版本有广泛的可移植性，支持在YARN, MPI, Sungrid Engine等各个平台上面运行，并且保留了单机并行版本的各种优化，使得它可以很好地解决于工业界规模的问题。
+
+- [XGBoost Slides](http://homes.cs.washington.edu/~tqchen/pdf/BoostedTree.pdf)
+- [XGBoost中文版原理介绍](http://www.52cs.org/?p=429)
+- [原始论文XGBoost: A Scalable Tree Boosting System](http://arxiv.org/pdf/1603.02754v1.pdf)
+- [XGBoost Parameters (official guide)](http://xgboost.readthedocs.io/en/latest/parameter.html#general-parameters)
+- **精彩博文：** 
+    - [XGBoost浅入浅出——wepon](http://wepon.me/2016/05/07/XGBoost%E6%B5%85%E5%85%A5%E6%B5%85%E5%87%BA/) 
+    - [XGBoost: 速度快效果好的boosting模型](https://cosx.org/2015/03/xgboost) 
+    - [Complete Guide to Parameter Tuning in XGBoost (with codes in Python)](https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/)
+    - [XGBoost Plotting API以及GBDT组合特征实践](http://blog.csdn.net/sb19931201/article/details/65445514)
+
+
+
+## TensorFlow
 
 ## Numpy
   [Click Here to get more numpy examples](https://docs.scipy.org/doc/numpy-dev/user/quickstart.html)
