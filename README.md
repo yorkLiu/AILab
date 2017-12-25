@@ -1,6 +1,6 @@
 # AI Lab
 
-## 机器学习 e
+## 机器学习
 
 **1.决策树学习  主要参数**
 - criterion: gini or entropy
@@ -24,6 +24,14 @@
     - 正向概率： 假设袋子里面的N个白球，M个黑球，你伸手进去摸一把，摸出黑球的概率是多少？
     - 向概率: 如果我们事先并不知道黑球与白球的比例，而是闭着眼睛摸出一个（或好几个）球，观察这些取出来的球的颜色之后，那我们可以就此对袋子中的黑白球的比例作出什么样的推测？
 
+## scikit-Learn
+简单高效的数据挖掘和数据分析工具
+所有人都适用，可在不同的上下文中重用
+基于NumPy、SciPy和matplotlib构建
+开源、商业可用 - BSD许可
+- [scikit-learn 中文手册Git Hub](https://github.com/lzjqsdd/scikit-learn-doc-cn)
+- [scikit-learn 中文手册(official guide)](http://sklearn.lzjqsdd.com/])
+
 ## XGBoost
 XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开源boosted tree工具包，比常见的工具包快10倍以上。在数据科学方面，有大量kaggle选手选用它进行数据挖掘比赛，其中包括两个以上kaggle比赛的夺冠方案。在工业界规模方面，xgboost的分布式版本有广泛的可移植性，支持在YARN, MPI, Sungrid Engine等各个平台上面运行，并且保留了单机并行版本的各种优化，使得它可以很好地解决于工业界规模的问题。
 
@@ -36,7 +44,59 @@ XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开�
     - [XGBoost: 速度快效果好的boosting模型](https://cosx.org/2015/03/xgboost) 
     - [Complete Guide to Parameter Tuning in XGBoost (with codes in Python)](https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/)
     - [XGBoost Plotting API以及GBDT组合特征实践](http://blog.csdn.net/sb19931201/article/details/65445514)
-
+    
+- [请戳我 看如何安装 XGBoost](https://xgboost.readthedocs.io/en/latest/build.html)
+    
+- **XGBoost 常用参数详解**
+    - [官方参数戳这里](http://xgboost.readthedocs.io/en/latest/parameter.html#general-parameters)
+    
+    - **1. General Parameters（常规参数** 
+        - **1.booster [default=gbtree]**：选择基分类器，gbtree: tree-based models/gblinear: linear models 
+        - **2.silent [default=0]**:设置成1则没有运行信息输出，最好是设置为0. 
+        - **3.nthread [default to maximum number of threads available if not set]**：线程数
+    - **2. Booster Parameters（模型参数** 
+        - 1. **eta [default=0.3]** :shrinkage参数，用于更新叶子节点权重时，乘以该系数，避免步长过大。参数值越大，越可能无法收敛。把学习率 eta 设置的小一些，小学习率可以使得后面的学习更加仔细。 
+        - 2. **min_child_weight [default=1]**:这个参数默认是 1，是每个叶子里面 h 的和至少是多少，对正负样本不均衡时的 0-1 分类而言，假设 h 在 0.01 附近，min_child_weight 为 1 意味着叶子节点中最少需要包含 100 个样本。这个参数非常影响结果，控制叶子节点中二阶导的和的最小值，该参数值越小，越容易 overfitting。
+        - 3.**max_depth [default=6]**: 每颗树的最大深度，树高越深，越容易过拟合。 
+        - 4.**max_leaf_nodes**:最大叶结点数，与max_depth作用有点重合。 
+        - 5.**gamma [default=0]**：后剪枝时，用于控制是否后剪枝的参数。 
+        - 6.**max_delta_step [default=0]**：这个参数在更新步骤中起作用，如果取0表示没有约束，如果取正值则使得更新步骤更加保守。可以防止做太大的更新步子，使更新更加平缓。 
+        - 7.**subsample [default=1]**：样本随机采样，较低的值使得算法更加保守，防止过拟合，但是太小的值也会造成欠拟合。 
+        - 8.**colsample_bytree [default=1]**：列采样，对每棵树的生成用的特征进行列采样.一般设置为： 0.5-1 
+        - 9.**lambda [default=1]**：控制模型复杂度的权重值的L2正则化项参数，参数越大，模型越不容易过拟合。 
+        - 10.**alpha [default=0]**:控制模型复杂程度的权重值的 L1 正则项参数，参数值越大，模型越不容易过拟合。 
+        - 11.**scale_pos_weight [default=1]**：如果取值大于0的话，在类别样本不平衡的情况下有助于快速收敛。
+                      
+    - **3. Learning Task Parameters（学习任务参数）**
+        - 1.**objective [default=reg:linear]**：定义最小化损失函数类型，常用参数： 
+            - **binary:logistic** –logistic regression for binary classification, returns predicted probability (not class) 
+            - **ulti:softmax** –multiclass classification using the softmax objective, returns predicted class (not probabilities) 
+        you also need to set an additional num_class (number of classes) parameter defining the number of unique classes 
+            - **multi:softprob** –same as softmax, but returns predicted probability of each data point belonging to each class. 
+        - 2.**eval_metric [ default according to objective ]**： 
+        The metric to be used for validation data. 
+        The default values are rmse for regression and error for classification. 
+        Typical values are: 
+            - **rmse** – root mean square error 
+            - **mae** – mean absolute error 
+            - **logloss** – negative log-likelihood 
+            - **error** – Binary classification error rate (0.5 threshold) 
+            - **merror** – Multiclass classification error rate 
+            - **mlogloss** – Multiclass logloss 
+            - **auc**: Area under the curve 
+        - 3.**seed [default=0]**： 
+        The random number seed. 随机种子，用于产生可复现的结果 
+        Can be used for generating reproducible results and also for parameter tuning.
+    - **注意**: python sklearn style参数名会有所变化 
+        - eta –> learning_rate 
+        - lambda –> reg_lambda 
+        - alpha –> reg_alpha
+                                      
+```
+    pip install xgboost
+    
+    
+```
 
 
 ## TensorFlow
