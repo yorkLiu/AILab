@@ -91,7 +91,7 @@ XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开�
         - eta –> learning_rate 
         - lambda –> reg_lambda 
         - alpha –> reg_alpha
-                                      
+                                         
 ```
     pip install xgboost
     # -*- coding: UTF-8 -*- 
@@ -178,6 +178,7 @@ XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开�
     Accuracy: 78.35 %
     
 ```
+[示例 1](https://github.com/yorkLiu/AILab/blob/master/MLCase/xgboost01.py) [示例 2](https://github.com/yorkLiu/AILab/blob/master/MLCase/xgboost02.py)
 
 
 ## TensorFlow
