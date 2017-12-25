@@ -94,7 +94,88 @@ XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开�
                                       
 ```
     pip install xgboost
+    # -*- coding: UTF-8 -*- 
+    from numpy import loadtxt
+    from sklearn.model_selection import train_test_split
+    from sklearn import metrics
+    from xgboost.sklearn import XGBClassifier
     
+    # load data
+    dataset = loadtxt("pima-indians-diabetes.csv", delimiter=",")
+    X = dataset[:,0:8]
+    Y = dataset[:,8]
+    
+    seed = 7
+    
+    test_size=0.33
+    X_train, x_test, Y_train, y_test = train_test_split(X, Y, test_size=test_size, random_state=seed)
+    
+    model = XGBClassifier()
+    eval_set = [(x_test, y_test)]
+    # early_stopping_rounds: 如果连续N 次结果没有提升,则停止
+    # eval_metric: 损失函数
+    # eval_set: A list of (X, y) pairs to use as a validation set for early-stopping
+    # verbose: print 学习结果
+    model.fit(X_train, Y_train, early_stopping_rounds=10, eval_metric="logloss", eval_set=eval_set, verbose=True)
+    
+    # make predictions for test data
+    y_pred = model.predict(x_test)
+    predictions =[round(value) for value in y_pred]
+    
+    accuracy = metrics.accuracy_score(y_test, predictions)
+    
+    print "Accuracy: %.2f %%" % (accuracy*100)
+    
+    -----------------------------
+    [OutPut]
+    [0]	validation_0-logloss:0.660186
+    Will train until validation_0-logloss hasn't improved in 10 rounds.
+    [1]	validation_0-logloss:0.634854
+    [2]	validation_0-logloss:0.612239
+    [3]	validation_0-logloss:0.593118
+    [4]	validation_0-logloss:0.578303
+    [5]	validation_0-logloss:0.564942
+    [6]	validation_0-logloss:0.555113
+    [7]	validation_0-logloss:0.54499
+    [8]	validation_0-logloss:0.539151
+    [9]	validation_0-logloss:0.531819
+    [10]	validation_0-logloss:0.526065
+    [11]	validation_0-logloss:0.51977
+    [12]	validation_0-logloss:0.514979
+    [13]	validation_0-logloss:0.50927
+    [14]	validation_0-logloss:0.506086
+    [15]	validation_0-logloss:0.503565
+    [16]	validation_0-logloss:0.503591
+    [17]	validation_0-logloss:0.500805
+    [18]	validation_0-logloss:0.497605
+    [19]	validation_0-logloss:0.495328
+    [20]	validation_0-logloss:0.494777
+    [21]	validation_0-logloss:0.494274
+    [22]	validation_0-logloss:0.493333
+    [23]	validation_0-logloss:0.492211
+    [24]	validation_0-logloss:0.491936
+    [25]	validation_0-logloss:0.490578
+    [26]	validation_0-logloss:0.490895
+    [27]	validation_0-logloss:0.490646
+    [28]	validation_0-logloss:0.491911
+    [29]	validation_0-logloss:0.491407
+    [30]	validation_0-logloss:0.488828
+    [31]	validation_0-logloss:0.487867
+    [32]	validation_0-logloss:0.487297
+    [33]	validation_0-logloss:0.487562
+    [34]	validation_0-logloss:0.487788
+    [35]	validation_0-logloss:0.487962
+    [36]	validation_0-logloss:0.488218
+    [37]	validation_0-logloss:0.489582
+    [38]	validation_0-logloss:0.489334
+    [39]	validation_0-logloss:0.490969
+    [40]	validation_0-logloss:0.48978
+    [41]	validation_0-logloss:0.490704
+    [42]	validation_0-logloss:0.492369
+    Stopping. Best iteration:
+    [32]	validation_0-logloss:0.487297
+
+    Accuracy: 78.35 %
     
 ```
 
