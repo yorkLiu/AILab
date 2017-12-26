@@ -32,6 +32,7 @@
 开源、商业可用 - BSD许可
 - [scikit-learn 中文手册Git Hub](https://github.com/lzjqsdd/scikit-learn-doc-cn)
 - [scikit-learn 中文手册(official guide)](http://sklearn.lzjqsdd.com/])
+- [scikit-learn 中文手册(official guide) - 0.19.0](http://sklearn.apachecn.org/cn/0.19.0/#)
 
 ## XGBoost
 XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开源boosted tree工具包，比常见的工具包快10倍以上。在数据科学方面，有大量kaggle选手选用它进行数据挖掘比赛，其中包括两个以上kaggle比赛的夺冠方案。在工业界规模方面，xgboost的分布式版本有广泛的可移植性，支持在YARN, MPI, Sungrid Engine等各个平台上面运行，并且保留了单机并行版本的各种优化，使得它可以很好地解决于工业界规模的问题。
