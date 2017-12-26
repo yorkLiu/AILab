@@ -22,5 +22,5 @@
 ```
 如下图所示，0与1的样本数量相差巨大
 <div class="row">
-<img src="https://github.com/yorkLiu/AILab/tree/master/creditcard/creditcard-anays.png">
+<img src="https://github.com/yorkLiu/AILab/blob/master/creditcard/creditcard-anays.png">
 </div>
