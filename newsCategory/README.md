@@ -83,11 +83,11 @@
     plt.show()
    
    ```
-   示例代码: [news_C.py][news exmaple], 运行效果如下图:
-   
+   示例代码: [news_C.py](https://github.com/yorkLiu/AILab/blob/master/newsCategory/news_C.py), 运行效果如下图:
+   更多关于 [wordcloud示例请参见官方](https://github.com/amueller/word_cloud)
    ![Screenshot](wordcloud-01.png)
    
-   更多关于 [wordcloud示例请参见官方](https://github.com/amueller/word_cloud)
+   
    
    
    
