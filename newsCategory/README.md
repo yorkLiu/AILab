@@ -83,9 +83,9 @@
     plt.show()
    
    ```
-   示例代码: [news_C.py]
-   运行效果如下图:
-   ![Screenshot](https://github.com/yorkLiu/AILab/tree/master/newsCategory/wordcloud-01.png)
+   示例代码: [news_C.py][news exmaple], 运行效果如下图:
+   
+   ![Screenshot](wordcloud-01.png)
    
    更多关于 [wordcloud示例请参见官方](https://github.com/amueller/word_cloud)
    
