@@ -241,3 +241,27 @@ XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开�
   sns.plt.show()
   
   ```
+  
+  学习资源
+  ====
+  关于**机器学习/AI 学习的资源** 相信在网上一搜，肯定会让你眼花缭乱, 以下是我整理的一些学习资源，供参考 ([以下资源来源于这篇文章](https://mp.weixin.qq.com/s?__biz=MzI0ODcxODk5OA==&mid=2247491798&idx=1&sn=9db6779c6419a94e7c337cd8f95efdf9&chksm=e99ed32fdee95a399a76af34df9a6ed34ebb44e9951ceba36f971fa71147522f0242411fc430&scene=21#wechat_redirect))
+  - 1. 线性代数
+    - [麻省理工公开课 - 线性代数](http://open.163.com/special/opencourse/daishu.html)，深入浅出效果拔群，以后会用到的SVD、希尔伯特空间等都有介绍
+    - [GitHub - zlotus/notes-linear-algebra: 线性代数笔记 ](https://github.com/zlotus/notes-linear-algebra)
+    - [统计学相关基础](https://zhuanlan.zhihu.com/p/22543073)
+  - 2. 入门机器学习算法
+    - [斯坦福大学公开课 ：机器学习课程, 吴恩达教授的老版cs229的视频，讲的非常细](http://open.163.com/special/opencourse/machinelearning.html), 算法的目标->数学推演->伪代码 这套教程唯一的缺点在于没有介绍最近大火的神经网络，但其实这也算是优点，让我明白了算法都有各自的应用领域，并不是所有问题都需要用神经网络来解决. 这个课程里详细介绍的内容有：一般线性模型、高斯系列模型、SVM理论及实现、聚类算法以及EM算法的各种相关应用、PCA/ICA、学习理论、马尔可夫系列模型
+    - [吴恩达教授的老版cs229 课堂笔记](http://cs229.stanford.edu/syllabus.html)
+    - [机器学习笔记](https://github.com/zlotus/notes-LSJU-machine-learning)
+  - 3. 尝试用代码实现算法
+    - [还是吴恩达教授的课程，只不过这个是极简版的cs229](https://www.coursera.org/learn/machine-learning), 几乎就是教怎么在matlab里快速实现一个模型(这套教程里有神经网络基本概念及实现)。这套课程的缺点是难度比较低，推导过程非常简略，但是这也是它的优点——让我专注于把理论转化成代码
+    - [课堂笔记](https://github.com/zlotus/Coursera_Machine_Learning_Exercises)
+  **PS:** 线性代数，非常重要，模型计算全靠它~一定要复习扎实，如果平常不用可能忘的比较多； 高数+概率，这俩只要掌握基础就行了，比如积分和求导、各种分布、参数估计等等
+  - 4. 怎么用最短时间高效而踏实地学习 Python
+    - [可以参考 知乎 大V的文章](https://www.zhihu.com/question/28530832/answer/41170900)
+    - 如果日常只编写增删改查的代码的话，那可能数学已经忘得差不多了，需要重温线性代数和微积分的基础知识，这会为之后的学习立下汗马功劳
+    
+    
+  - 不断更新中.... 
+    
+      

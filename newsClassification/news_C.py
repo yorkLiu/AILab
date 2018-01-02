@@ -6,6 +6,12 @@ from jieba import analyse
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
+"""
+一个更好玩的例子 "基于复旦大学提供的数据集进行中文分类"
+http://blog.csdn.net/github_36326955/article/details/54891204
+https://github.com/sunxiangguo/chinese_text_classification
+"""
+
 df_news = pd.read_table('val.txt', names=['contenttitle', 'url', 'content'])
 df_news = df_news.dropna()
 
@@ -71,11 +77,12 @@ contents_clean, all_words = drop_stopwords(orig_content, stopwords)
 result =  ''.join([j for i in contents_clean for j in i])
 get_tags_with_tf_idf(result)
 
-contents_clean = pd.DataFrame({'Content-Clean':contents_clean})
+
+contents_clean_df = pd.DataFrame({'Content-Clean':contents_clean})
 all_words = pd.DataFrame({'AllWord': all_words})
 
 
-print contents_clean.head()
+print contents_clean_df.head()
 print '--------------------'
 
 words_count = all_words['AllWord'].value_counts()
@@ -84,19 +91,42 @@ words_count_values = words_count.values.tolist()
 
 
 
-wordcloud = WordCloud(font_path='SimHei.ttf', max_font_size=40, background_color='white')
-word_frequency = {words_count_keys[i]:words_count_values[i] for i in range(100)}
-# print word_frequency
-wordcloud.fit_words(word_frequency)
+# wordcloud = WordCloud(font_path='SimHei.ttf', max_font_size=40, background_color='white')
+# word_frequency = {words_count_keys[i]:words_count_values[i] for i in range(100)}
+# # print word_frequency
+# wordcloud.fit_words(word_frequency)
+#
+# plt.figure()
+# plt.imshow(wordcloud, interpolation="bilinear")
+# plt.axis("off")
+# plt.show()
 
-plt.figure()
-plt.imshow(wordcloud, interpolation="bilinear")
-plt.axis("off")
-plt.show()
+##################
+#  gensim
+##################
+from gensim import corpora, similarities
+from gensim.models.ldamodel import LdaModel
+from gensim.models.tfidfmodel import TfidfModel
 
-# for w in all_words:
-#     print w
+# gensim Dictionary format is "list of list" (i.e [[1, 2, 3], [4,5,6]...]
+dictionary = corpora.Dictionary(contents_clean)
 
+# words to vectors
+corpus = [dictionary.doc2bow(text) for text in contents_clean]
+
+lda = LdaModel(corpus = corpus, num_topics=10, id2word=dictionary)
+
+
+print lda.print_topic(1, 10)
+print lda.print_topic(2, 10)
+print lda.print_topic(3, 10)
+print '--------------------------'
+for topic in lda.print_topics(num_topics=10, num_words=5):
+    print topic[1]
+
+print '------------tfidf---------'
+tfidf = TfidfModel(corpus=corpus)
+print tfidf[dictionary.doc2bow([u'中国', u'报道'])]
 
 
 
