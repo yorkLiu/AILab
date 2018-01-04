@@ -55,3 +55,5 @@ if __name__  =="__main__":
 - 2.将中文分词以SkLearn Bunch格式存储 [corpus2Bunch.py](corpus2Bunch.py)
 - 3.将中文分词转换成向量 [vector_sapce.py](vector_sapce.py)
 - 4.预测 -  使用 **贝叶斯**进行分类 [NBayes_Predict.py](NBayes_Predict.py)
+
+**Note** 详细教程请参见 [相国大人博客](http://blog.csdn.net/github_36326955/article/details/54891204)
