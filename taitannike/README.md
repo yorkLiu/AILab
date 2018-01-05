@@ -83,7 +83,10 @@
     
 
 ## LinearRegression 线性回归
-ss  
+- [关于 线性回归 请参见这篇博文](http://blog.csdn.net/github_36326955/article/details/60462778)
+- 知识点 
+    - sigmod 函数 输出是值是介于 0~1之间的 [0,1]区间上, 函数图像为:
+    ![](sigmod-fun.png)
     
 ## RandomForest 随机森林
 - 1.选择样本随机
