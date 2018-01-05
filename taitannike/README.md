@@ -108,4 +108,6 @@ ss
            [0.8,0.2]])  #代表[3,4,5,6]被判断为0的概率为0.8，被判断为1的概率为0.2
     
 
-    
+## Note
+* [Click here to view the samples 示例](taitannike.ipynb)
+* [也可以参见这个](https://github.com/highroom/Project/blob/master/taitannike.ipynb)    
