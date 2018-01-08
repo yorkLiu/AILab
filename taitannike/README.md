@@ -85,9 +85,18 @@
 
 [请参见博文 交叉验证详解](http://blog.csdn.net/jasonding1354/article/details/50562513)    
     
-
 ## LinearRegression 线性回归
-- [关于 线性回归 请参见这篇博文](http://blog.csdn.net/github_36326955/article/details/60462778)
+- [关于 线性回归 请参见这篇博文 1](http://blog.csdn.net/viewcode/article/details/8794401)
+- [关于 线性回归 请参见这篇博文 2](https://www.cnblogs.com/jerrylead/archive/2011/03/05/1971867.html)
+- [关于 线性回归 请参见这篇博文 3](http://blog.csdn.net/xbinworld/article/details/43919445)
+- 知识点
+    - 线性回归 是以 高斯分布 为误差分析模型； 逻辑回归 采用的是 伯努利分布 分析误差。
+    - **softmax** 回归就是 一般线性回归的一个例子
+
+而高斯分布、伯努利分布、贝塔分布、迪特里特分布，都属于指数分布
+
+## LogisticRegression 逻辑回归
+- [关于 逻辑回归 请参见这篇博文](http://blog.csdn.net/github_36326955/article/details/60462778)
 - 知识点 
     - sigmod 函数 输出是值是介于 0~1之间的 [0,1]区间上, 函数图像为:
     ![](sigmod-fun.png)
