@@ -5,8 +5,8 @@
 - [戳我下载 测试数据集](https://pan.baidu.com/s/1bplTvo7)
 
 ## 中文分词工具
-- 结巴分词(免费) (jieba)[https://github.com/fxsjy/jieba]
-- NLPIR分词(商用需付费) (NLPIR)[https://github.com/NLPIR-team/NLPIR]
+- 结巴分词(免费) [jieba](https://github.com/fxsjy/jieba)
+- NLPIR分词(商用需付费) [NLPIR](https://github.com/NLPIR-team/NLPIR)
 
 ## 中文文本分类流程
 - 1. 预处理
