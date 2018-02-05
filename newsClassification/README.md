@@ -21,7 +21,8 @@
 
 
 ## 分词工具
- - **jieba [Fork jieba on GitHub](https://github.com/whtsky/jieba/)**
+ - **NLPIR分词(商用需付费)** (NLPIR)[https://github.com/NLPIR-team/NLPIR]
+ - **jieba** [Fork jieba on GitHub](https://github.com/fxsjy/jieba)
    ```
      “结巴”中文分词：做最好的 Python 中文分词组件
     "Jieba" (Chinese for "to stutter") Chinese text segmentation: built to be the best Python Chinese word segmentation module.
