@@ -283,5 +283,5 @@ XGBoost是大规模并行boosted tree的工具，它是目前最快最好的开�
     - [可以参考 知乎 大V的文章](https://www.zhihu.com/question/28530832/answer/41170900)
     - 如果日常只编写增删改查的代码的话，那可能数学已经忘得差不多了，需要重温线性代数和微积分的基础知识，这会为之后的学习立下汗马功劳
 
-
+  - 5. [胡晓曼老师（Charlotte）人工智能博客](https://www.cnblogs.com/charlotte77/)
   - 不断更新中....
