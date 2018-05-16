@@ -30,3 +30,5 @@
 > **binary_crossentropy** vs **categorical_crossentropy**
 > **binary_crossentropy** 一般用作 **二分类**任务
 > **categorical_crossentropy** 一般用作  **多分类**任务, 并伴随 **softmax** 为激活函数使用!
+
+4. 更详细的介绍请参考 [维基百科激活函数](https://en.wikipedia.org/wiki/Activation_function)
