@@ -31,4 +31,8 @@
 > **binary_crossentropy** 一般用作 **二分类**任务
 > **categorical_crossentropy** 一般用作  **多分类**任务, 并伴随 **softmax** 为激活函数使用!
 
-4. 更详细的介绍请参考 [维基百科激活函数](https://en.wikipedia.org/wiki/Activation_function)
+4. 更详细的介绍请参考 
+	- [维基百科激活函数](https://en.wikipedia.org/wiki/Activation_function)
+
+5. Optimizer 方法
+	- [优化方法总结(BGD,SGD,Momentum,AdaGrad,RMSProp,Adam)](https://blog.csdn.net/u014595019/article/details/52989301)
