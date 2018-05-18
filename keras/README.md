@@ -36,3 +36,24 @@
 
 5. Optimizer 方法
 	- [优化方法总结(BGD,SGD,Momentum,AdaGrad,RMSProp,Adam)](https://blog.csdn.net/u014595019/article/details/52989301)
+
+## 书箱
+- [Tensorflow实战学习笔记、代码、机器学习进阶系列](https://github.com/MachineLP/Tensorflow-) or [Tensorflow实战学习笔记、代码、机器学习进阶系列 on CSDN](https://blog.csdn.net/u014365862/article/details/78422372)
+- [深度学习系列教程](https://blog.csdn.net/jiangjunshow/article/details/77711593)
+
+## 更多示例
+- [Keras 车标识别](https://github.com/UniqueAndys/vehicle-logo-recognition)	
+- [TensorFlow 聊天机器人](https://blog.csdn.net/u014365862/article/details/57518873)
+- [Building Chatbots in Python 视频](https://www.datacamp.com/courses/building-chatbots-in-python)
+
+
+
+
+## 数据集
+- [Kaggle数据集](https://www.kaggle.com/datasets)
+- [Deep Learning DataSet](http://deeplearning.net/datasets/)
+- [CIFAR 10 & CIFAR 100：32x32的彩色图像数据集](https://www.cs.toronto.edu/~kriz/cifar.html)
+- [ImageNet 新算法实际上使用的图像数据集，很多图像 API 公司从其 REST 接口获取标签，这些标签被怀疑与 ImageNet 的下一级 WordNet 的 1000 个类很相似](http://image-net.org/)
+- [Labeled Faces in the Wild：使用名称标识符标记的面部区域数据集，常用于训练面部识别系统](http://vis-www.cs.umass.edu/lfw/)
+- [Text Classification Datasets：一个文本分类数据集](https://drive.google.com/drive/folders/0Bz8a_Dbh9Qhbfll6bVpmNUtUcFdjYmF2SEpmZUZUcVNiMUw1TWN6RDV3a0JHT3kxLVhVR2M) 包含8个可用于文本分类的子数据集，样本大小从120K到3.6M，问题范围从2级到14级，数据来源于 DBPedia、Amazon、Yelp、Yahoo!、Sogou 和 AG
+- [更多数据集可以参考这篇文章](http://www.sohu.com/a/126913367_473283)
