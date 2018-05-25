@@ -6,6 +6,8 @@
 ## 教程
 - [Keras 中文文档](https://keras-cn.readthedocs.io/)
 - [Deep Learning with Pyton](https://cnbeining.github.io/deep-learning-with-python-cn/3-multi-layer-perceptrons/ch10-project-multiclass-classification-of-flower-species.html) 有介绍更多关于Keras的东西及如何使用Keras 进行建模
+- [莫烦大牛视频 教程](http://study.163.com/provider/1111519/course.htm) 里面有很多的教程, TensorFlow, Keras, Numpy, Pandas and etc.
+- [知识图谱、web数据挖掘及NLP](https://blog.csdn.net/column/details/eastmount-kgdmnlp.html)
 
 ## Blogs & 案例
 - [AutoEncoders with Keras](https://blog.keras.io/building-autoencoders-in-keras.html)
@@ -47,7 +49,8 @@
 - [Building Chatbots in Python 视频](https://www.datacamp.com/courses/building-chatbots-in-python)
 
 
-
+## 工具集
+- [OpenCV-Python 中文说明](https://www.kancloud.cn/aollo/aolloopencv/259610)
 
 ## 数据集
 - [Kaggle数据集](https://www.kaggle.com/datasets)
