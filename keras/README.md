@@ -42,6 +42,7 @@
 ## 书箱
 - [Tensorflow实战学习笔记、代码、机器学习进阶系列](https://github.com/MachineLP/Tensorflow-) or [Tensorflow实战学习笔记、代码、机器学习进阶系列 on CSDN](https://blog.csdn.net/u014365862/article/details/78422372)
 - [深度学习系列教程](https://blog.csdn.net/jiangjunshow/article/details/77711593)
+- [Deep Learning Paper 中文翻译](https://github.com/SnailTyan/deep-learning-papers-translation) 已经翻译了很多论文了(包括 Image Classfication, OCR, Object Detection 等等), 值得一看
 
 ## 更多示例
 - [Keras 车标识别](https://github.com/UniqueAndys/vehicle-logo-recognition)	
